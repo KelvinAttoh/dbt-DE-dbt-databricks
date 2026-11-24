@@ -1,0 +1,31 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionMethod": "Hostname and Token",
+            "catalog": "raw",
+            "previewLimit": 50,
+            "driver": "Databricks",
+            "name": "raw",
+            "host": "dbc-b57618aa-17aa.cloud.databricks.com",
+            "path": "/sql/1.0/warehouses/d703b0f657f01cde"
+        },
+        {
+            "connectionMethod": "Hostname and Token",
+            "catalog": "dev",
+            "previewLimit": 50,
+            "driver": "Databricks",
+            "name": "dev",
+            "host": "dbc-b57618aa-17aa.cloud.databricks.com",
+            "path": "/sql/1.0/warehouses/d703b0f657f01cde"
+        },
+        {
+            "connectionMethod": "Hostname and Token",
+            "catalog": "prod",
+            "previewLimit": 50,
+            "driver": "Databricks",
+            "name": "prod",
+            "path": "/sql/1.0/warehouses/d703b0f657f01cde",
+            "host": "dbc-b57618aa-17aa.cloud.databricks.com"
+        }
+    ]
+}
