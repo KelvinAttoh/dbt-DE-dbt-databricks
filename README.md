@@ -1,6 +1,6 @@
 # Production Job Postings Pipeline (v2) - dbt + Databricks
 
-![P2 pipeline architecture](../dbt%20DE%20dbt-databricks/dbt-databricks-pipeline/Images/p2_pipeline.png)
+![P2 pipeline architecture](/dbt-databricks-pipeline/Images/p2_pipeline.png)
 
 A production dbt pipeline on **Databricks** over 843,097 raw job-posting scrapes, rebuilt nightly by nightly job with zero secrets.
 
@@ -25,7 +25,7 @@ A production dbt pipeline on **Databricks** over 843,097 raw job-posting scrapes
 
 Raw scrapes flow through the medallion layers - raw → staging → intermediate → the star-schema marts while snapshots capture history off staging. The lineage graph below is every model dbt builds: 
 
-![dbt lineage graph](../dbt%20DE%20dbt-databricks/dbt-databricks-pipeline/Images/lineage.png)
+![dbt lineage graph](/dbt-databricks-pipeline/Images/lineage.png)
 
 And the dbt features doing the work:
 
