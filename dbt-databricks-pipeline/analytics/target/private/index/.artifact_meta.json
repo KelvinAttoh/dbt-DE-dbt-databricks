@@ -1,17 +1,17 @@
 {
   "target_dir": "/Users/bravo/dbt DE dbt-databricks/dbt-databricks-pipeline/analytics/target",
   "fingerprints": {
+    "manifest.json": {
+      "size": 1066351,
+      "modified_secs": 1795487730
+    },
     "run_results.json": {
-      "size": 29413,
-      "modified_secs": 1795486927
+      "size": 29421,
+      "modified_secs": 1795487730
     },
     "semantic_manifest.json": {
       "size": 234,
-      "modified_secs": 1795486893
-    },
-    "manifest.json": {
-      "size": 1066351,
-      "modified_secs": 1795486927
+      "modified_secs": 1795487710
     }
   },
   "write_source": "DirectWrite",

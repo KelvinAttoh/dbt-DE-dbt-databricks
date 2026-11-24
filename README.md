@@ -12,20 +12,20 @@ A production dbt pipeline on **Databricks** over 843,097 raw job-posting scrapes
 
 | What I Built | How I Implemented | Where To Look |
 | --- | --- | --- |
-| **Star Schema** | fact + dims + bridge on declared grain | [`analytics/models/marts/`](analytics/models/marts/)
-| **SCD2 Snapshots** | a year of salary history, backfilled | [`analytics/snapshots`](analytics/snapshots/) + [`scripts/`](scripts/)
-| **Incremental fact** | merge on `job_id`, only new days load | [`fct_job_postings.sql`](analytics/models/marts/fct_job_postings.sql)
-| **Macros** | a custom parser + an overriden built-in | [`analytics/macros/`](analytics/macros/)
-| **Tests** | generic, singular and custom generic | [`analytics/tests`](analytics/tests/) + properties YAMLs | 
+| **Star Schema** | fact + dims + bridge on declared grain | [`analytics/models/marts/`](../dbt%20DE%20dbt-databricks/dbt-databricks-pipeline/analytics/models/marts/)
+| **SCD2 Snapshots** | a year of salary history, backfilled | [`analytics/snapshots`](/dbt-databricks-pipeline/analytics/snapshots/) + [`scripts/`](/dbt-databricks-pipeline/scripts/)
+| **Incremental fact** | merge on `job_id`, only new days load | [`fct_job_postings.sql`](/dbt-databricks-pipeline/analytics/models/marts/fct_job_postings.sql)
+| **Macros** | a custom parser + an overriden built-in | [`analytics/macros/`](/dbt-databricks-pipeline/analytics/macros/)
+| **Tests** | generic, singular and custom generic | [`analytics/tests`](/dbt-databricks-pipeline/analytics/tests/) + properties YAMLs | 
 | **Environments** | dev/prod as catalogs: dev from laptop, prod only from the job | Unity Catalog: `dev` + `prod` |
 | **Orchestrations** | scheduled Databricks Job, zero secrets | Databricks → Jobs & Pipelines |
-| **Analyses** | questions, keep next to the models that answer them | [`analytics/analytics`](analytics/analyses/)
+| **Analyses** | questions, keep next to the models that answer them | [`analytics/analytics`](/dbt-databricks-pipeline/analytics/analyses/)
 
 ## ⚙️ The dbt Pipeline
 
 Raw scrapes flow through the medallion layers - raw → staging → intermediate → the star-schema marts while snapshots capture history off staging. The lineage graph below is every model dbt builds: 
 
-![dbt lineage graph](Images/lineage.png)
+![dbt lineage graph](../dbt%20DE%20dbt-databricks/dbt-databricks-pipeline/Images/lineage.png)
 
 And the dbt features doing the work:
 
@@ -75,7 +75,7 @@ The marts keep each job's **latest** scrape - the snapshot table keep **every ve
 
 Structure, tests, and column descriptions were written along the way - the doc site is a rendering of work already done:
 
-**→ [)**
+**→ [kelvinattoh.github.io/dbt-DE-dbt-databricks](https://kelvinattoh.github.io/dbt-DE-dbt-databricks/)**
 
 
 The site shows:
