@@ -12,7 +12,7 @@ A production dbt pipeline on **Databricks** over 843,097 raw job-posting scrapes
 
 | What I Built | How I Implemented | Where To Look |
 | --- | --- | --- |
-| **Star Schema** | fact + dims + bridge on declared grain | [`analytics/models/marts/`](../dbt%20DE%20dbt-databricks/dbt-databricks-pipeline/analytics/models/marts/)
+| **Star Schema** | fact + dims + bridge on declared grain | [`analytics/models/marts/`](/dbt-databricks-pipeline/analytics/models/marts/)
 | **SCD2 Snapshots** | a year of salary history, backfilled | [`analytics/snapshots`](/dbt-databricks-pipeline/analytics/snapshots/) + [`scripts/`](/dbt-databricks-pipeline/scripts/)
 | **Incremental fact** | merge on `job_id`, only new days load | [`fct_job_postings.sql`](/dbt-databricks-pipeline/analytics/models/marts/fct_job_postings.sql)
 | **Macros** | a custom parser + an overriden built-in | [`analytics/macros/`](/dbt-databricks-pipeline/analytics/macros/)
