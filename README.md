@@ -1,6 +1,6 @@
 # Production Job Postings Pipeline (v2) - dbt + Databricks
 
-![P2 pipeline architecture](Images/p2_pipeline.png)
+![P2 pipeline architecture](../dbt%20DE%20dbt-databricks/dbt-databricks-pipeline/Images/p2_pipeline.png)
 
 A production dbt pipeline on **Databricks** over 843,097 raw job-posting scrapes, rebuilt nightly by nightly job with zero secrets.
 
@@ -75,7 +75,7 @@ The marts keep each job's **latest** scrape - the snapshot table keep **every ve
 
 Structure, tests, and column descriptions were written along the way - the doc site is a rendering of work already done:
 
-**→ [`kelvinattoh.github.io/dbt-Data-Engineering-Course/dbt-databricks-pipeline`](https://kelvinattoh.github.io/dbt-Data-Engineering-Course/)**
+**→ [)**
 
 
 The site shows:
